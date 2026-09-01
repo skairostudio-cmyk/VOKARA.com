@@ -146,28 +146,28 @@
             <div class="bg-white/60 border border-[#1C1C1C]/10 p-8 rounded-2xl flex flex-col justify-between hover:border-[#7A1E2C]/40 transition">
               <div class="font-mono text-3xl font-bold text-[#7A1E2C] mb-6">01</div>
               <div>
-                <h3 class="font-display text-lg font-bold mb-2">RANDOM</h3>
+                <h3 class="font-display text-lg font-bold mb-2">ACAK</h3>
                 <p class="text-sm text-[#6B6B6B] leading-relaxed">Dapatkan topik acak dari 200+ kurasi tanpa skrip sebelumnya.</p>
               </div>
             </div>
             <div class="bg-white/60 border border-[#1C1C1C]/10 p-8 rounded-2xl flex flex-col justify-between hover:border-[#7A1E2C]/40 transition">
               <div class="font-mono text-3xl font-bold text-[#7A1E2C] mb-6">02</div>
               <div>
-                <h3 class="font-display text-lg font-bold mb-2">THINK</h3>
+                <h3 class="font-display text-lg font-bold mb-2">BERPIKIR</h3>
                 <p class="text-sm text-[#6B6B6B] leading-relaxed">Gunakan waktu singkat 30 detik untuk menyusun alur pikiran utama.</p>
               </div>
             </div>
             <div class="bg-white/60 border border-[#1C1C1C]/10 p-8 rounded-2xl flex flex-col justify-between hover:border-[#7A1E2C]/40 transition">
               <div class="font-mono text-3xl font-bold text-[#7A1E2C] mb-6">03</div>
               <div>
-                <h3 class="font-display text-lg font-bold mb-2">SPEAK</h3>
+                <h3 class="font-display text-lg font-bold mb-2">BERBICARA</h3>
                 <p class="text-sm text-[#6B6B6B] leading-relaxed">Berbicara secara spontan tanpa membaca skrip sampai durasi selesai.</p>
               </div>
             </div>
             <div class="bg-white/60 border border-[#1C1C1C]/10 p-8 rounded-2xl flex flex-col justify-between hover:border-[#7A1E2C]/40 transition">
               <div class="font-mono text-3xl font-bold text-[#7A1E2C] mb-6">04</div>
               <div>
-                <h3 class="font-display text-lg font-bold mb-2">IMPROVE</h3>
+                <h3 class="font-display text-lg font-bold mb-2">BERKEMBANG</h3>
                 <p class="text-sm text-[#6B6B6B] leading-relaxed">Analisis kata pengisi (filler words), kelancaran, dan lihat kemajuanmu.</p>
               </div>
             </div>
@@ -187,15 +187,15 @@
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-white/20 pt-10">
             <div class="space-y-3">
-              <h3 class="font-display text-xl font-bold text-white">Speak More Naturally</h3>
+              <h3 class="font-display text-xl font-bold text-white">Berbicara Lebih Alami</h3>
               <p class="text-white/80 text-sm leading-relaxed">Latih kemampuan berbicara secara alami tanpa bergantung pada hafalan atau script teks yang kaku.</p>
             </div>
             <div class="space-y-3">
-              <h3 class="font-display text-xl font-bold text-white">Think Faster</h3>
+              <h3 class="font-display text-xl font-bold text-white">Berpikir Lebih Cepat</h3>
               <p class="text-white/80 text-sm leading-relaxed">Latih otakmu untuk menyusun ide secara terstruktur dalam kurun waktu beberapa detik saja.</p>
             </div>
             <div class="space-y-3">
-              <h3 class="font-display text-xl font-bold text-white">Build Confidence</h3>
+              <h3 class="font-display text-xl font-bold text-white">Membangun Kepercayaan Diri</h3>
               <p class="text-white/80 text-sm leading-relaxed">Bangun kepercayaan diri sejati melalui metrik perkembangan dan latihan yang konsisten.</p>
             </div>
           </div>
@@ -234,14 +234,12 @@
             MASUK
           </button>
         </form>
+        <div class="text-right mt-3">
+          <button type="button" onclick="resetPassword()" class="text-xs text-[#7A1E2C] font-semibold hover:underline">Lupa kata sandi?</button>
+        </div>
 
         <div class="mt-6 pt-6 border-t border-[#1C1C1C]/10 text-center space-y-3">
-          <button onclick="handleGuestLogin()" class="w-full border border-[#1C1C1C]/20 text-xs font-semibold py-2.5 rounded-xl hover:bg-[#1C1C1C]/5 transition flex items-center justify-center gap-2">
-            <svg class="w-3.5 h-3.5 text-[#7A1E2C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            <span>Coba Langsung (Mode Tamu / Demo)</span>
-          </button>
-
-          <p class="text-xs text-[#6B6B6B]">
+<p class="text-xs text-[#6B6B6B]">
             <span id="auth-switch-prompt">Belum punya akun?</span>
             <button onclick="toggleAuthMode()" id="auth-switch-btn" class="text-[#7A1E2C] font-semibold hover:underline">Daftar di sini</button>
           </p>
@@ -270,11 +268,11 @@
       <!-- Dashboard Cards Matrix -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <!-- CONFIDENCE SCORE CARD -->
+        <!-- SKOR KEPERCAYAAN DIRI CARD -->
         <div class="bg-white border border-[#1C1C1C]/10 rounded-3xl p-8 flex flex-col justify-between space-y-6 shadow-sm">
           <div>
             <div class="flex justify-between items-center mb-4">
-              <span class="text-xs uppercase font-mono tracking-widest text-[#6B6B6B] font-semibold">YOUR CONFIDENCE</span>
+              <span class="text-xs uppercase font-mono tracking-widest text-[#6B6B6B] font-semibold">KEPERCAYAAN DIRIMU</span>
               <svg class="w-5 h-5 text-[#7A1E2C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
             </div>
             <div class="space-y-3">
@@ -293,20 +291,20 @@
         <div class="bg-white border border-[#1C1C1C]/10 rounded-3xl p-8 flex flex-col justify-between space-y-6 shadow-sm">
           <div class="space-y-4">
             <div class="flex justify-between items-center">
-              <span class="text-xs uppercase font-mono tracking-widest text-[#6B6B6B] font-semibold">YOUR GROWTH</span>
+              <span class="text-xs uppercase font-mono tracking-widest text-[#6B6B6B] font-semibold">PERKEMBANGANMU</span>
               <svg class="w-5 h-5 text-[#7A1E2C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
             </div>
             <div class="space-y-3 pt-2">
               <div class="flex justify-between items-center text-sm">
-                <span class="text-[#6B6B6B]">Fluency</span>
+                <span class="text-[#6B6B6B]">Kelancaran</span>
                 <span id="dash-growth-fluency" class="font-semibold text-emerald-600 font-mono">+0%</span>
               </div>
               <div class="flex justify-between items-center text-sm">
-                <span class="text-[#6B6B6B]">Speaking Time</span>
+                <span class="text-[#6B6B6B]">Waktu Berbicara</span>
                 <span id="dash-growth-time" class="font-semibold text-[#1C1C1C] font-mono">0 min</span>
               </div>
               <div class="flex justify-between items-center text-sm">
-                <span class="text-[#6B6B6B]">Total Sesi</span>
+                <span class="text-[#6B6B6B]">Total Latihan</span>
                 <span id="dash-growth-sessions" class="font-semibold text-[#7A1E2C] font-mono">0 Sesi</span>
               </div>
             </div>
@@ -322,15 +320,15 @@
         <div class="bg-white border border-[#1C1C1C]/10 rounded-3xl p-8 flex flex-col justify-between space-y-6 shadow-sm">
           <div class="space-y-6">
             <div>
-              <span class="text-xs uppercase font-mono tracking-widest text-[#6B6B6B] font-semibold block mb-2">YOUR LEVEL</span>
-              <div id="dash-level" class="font-display text-xl font-bold text-[#7A1E2C]">Beginner Speaker</div>
+              <span class="text-xs uppercase font-mono tracking-widest text-[#6B6B6B] font-semibold block mb-2">LEVELMU</span>
+              <div id="dash-level" class="font-display text-xl font-bold text-[#7A1E2C]">Pembicara Pemula</div>
               <div class="w-full bg-[#F7F5F2] h-2 rounded-full mt-3 overflow-hidden border border-[#1C1C1C]/5">
                 <div id="dash-level-bar" class="bg-[#7A1E2C] h-full transition-all duration-500 rounded-full" style="width: 15%"></div>
               </div>
             </div>
 
             <div class="pt-4 border-t border-[#1C1C1C]/10">
-              <span class="text-xs uppercase font-mono tracking-widest text-[#6B6B6B] font-semibold block mb-2">YOUR FOCUS</span>
+              <span class="text-xs uppercase font-mono tracking-widest text-[#6B6B6B] font-semibold block mb-2">FOKUSMU</span>
               <h4 id="dash-focus-title" class="font-display text-sm font-bold text-[#1C1C1C]">Memulai Latihan Pertama</h4>
               <p id="dash-focus-desc" class="text-xs text-[#6B6B6B] mt-1 leading-relaxed">
                 Latihan pertamamu akan membantu VOKARA menganalisis pola bicaramu.
@@ -359,8 +357,8 @@
       <!-- STEP 1: INTRO -->
       <div id="practice-step-intro" class="practice-step w-full max-w-xl bg-white border border-[#1C1C1C]/10 rounded-3xl p-8 md:p-12 text-center space-y-8 shadow-md">
         <div class="space-y-3">
-          <span class="text-xs uppercase font-mono tracking-widest text-[#7A1E2C] font-semibold">STEP 01</span>
-          <h2 class="font-display text-3xl md:text-4xl font-extrabold text-[#1C1C1C]">READY TO SPEAK?</h2>
+          <span class="text-xs uppercase font-mono tracking-widest text-[#7A1E2C] font-semibold">TAHAP 01</span>
+          <h2 class="font-display text-3xl md:text-4xl font-extrabold text-[#1C1C1C]">SIAP BERBICARA?</h2>
           <p class="text-[#6B6B6B] text-base leading-relaxed">
             Kamu tidak akan mengetahui topik sampai acakan berhenti.<br />
             <span class="font-medium text-[#1C1C1C]">Tanpa naskah. Tanpa persiapan awal. Hanya pikiranmu.</span>
@@ -388,10 +386,10 @@
         </div>
       </div>
 
-      <!-- STEP 3: TOPIC READY & THINKING TIMER -->
+      <!-- STEP 3: TOPIK READY & THINKING TIMER -->
       <div id="practice-step-topic-ready" class="practice-step hidden w-full max-w-xl bg-white border border-[#1C1C1C]/10 rounded-3xl p-8 md:p-12 text-center space-y-8 shadow-md">
         <div class="space-y-2">
-          <span class="text-xs uppercase font-mono tracking-widest text-[#6B6B6B]">YOUR TOPIC</span>
+          <span class="text-xs uppercase font-mono tracking-widest text-[#6B6B6B]">YOUR TOPIK</span>
           <h2 id="current-topic-heading" class="font-display text-3xl md:text-4xl font-extrabold text-[#7A1E2C] uppercase tracking-tight py-2">
             KEGAGALAN
           </h2>
@@ -406,7 +404,7 @@
 
       <div id="practice-step-thinking" class="practice-step hidden w-full max-w-xl bg-white border border-[#1C1C1C]/10 rounded-3xl p-8 md:p-12 text-center space-y-8 shadow-md">
         <div class="space-y-2">
-          <span class="text-xs uppercase font-mono tracking-widest text-[#7A1E2C] font-semibold">THINK</span>
+          <span class="text-xs uppercase font-mono tracking-widest text-[#7A1E2C] font-semibold">BERPIKIR</span>
           <h2 class="font-display text-3xl font-bold">30 detik untuk menyusun pikiranmu.</h2>
           <p class="text-sm text-[#6B6B6B]">Topik: <span id="thinking-topic-sub" class="font-bold text-[#1C1C1C]">...</span></p>
         </div>
@@ -426,10 +424,10 @@
         </div>
 
         <div class="grid grid-cols-2 gap-4">
-          <button onclick="startSpeakingSession(60)" class="border-2 border-[#1C1C1C]/10 hover:border-[#7A1E2C] hover:bg-[#7A1E2C]/5 p-5 rounded-2xl font-mono font-bold text-sm">1 MINUTE</button>
-          <button onclick="startSpeakingSession(120)" class="border-2 border-[#1C1C1C]/10 hover:border-[#7A1E2C] hover:bg-[#7A1E2C]/5 p-5 rounded-2xl font-mono font-bold text-sm">2 MINUTES</button>
-          <button onclick="startSpeakingSession(180)" class="border-2 border-[#1C1C1C]/10 hover:border-[#7A1E2C] hover:bg-[#7A1E2C]/5 p-5 rounded-2xl font-mono font-bold text-sm">3 MINUTES</button>
-          <button onclick="startSpeakingSession(300)" class="border-2 border-[#1C1C1C]/10 hover:border-[#7A1E2C] hover:bg-[#7A1E2C]/5 p-5 rounded-2xl font-mono font-bold text-sm">5 MINUTES</button>
+          <button onclick="startSpeakingSession(60)" class="border-2 border-[#1C1C1C]/10 hover:border-[#7A1E2C] hover:bg-[#7A1E2C]/5 p-5 rounded-2xl font-mono font-bold text-sm">1 MENIT</button>
+          <button onclick="startSpeakingSession(120)" class="border-2 border-[#1C1C1C]/10 hover:border-[#7A1E2C] hover:bg-[#7A1E2C]/5 p-5 rounded-2xl font-mono font-bold text-sm">2 MENITS</button>
+          <button onclick="startSpeakingSession(180)" class="border-2 border-[#1C1C1C]/10 hover:border-[#7A1E2C] hover:bg-[#7A1E2C]/5 p-5 rounded-2xl font-mono font-bold text-sm">3 MENITS</button>
+          <button onclick="startSpeakingSession(300)" class="border-2 border-[#1C1C1C]/10 hover:border-[#7A1E2C] hover:bg-[#7A1E2C]/5 p-5 rounded-2xl font-mono font-bold text-sm">5 MENITS</button>
         </div>
       </div>
 
@@ -440,7 +438,7 @@
         </div>
 
         <div class="space-y-2">
-          <span class="text-xs uppercase font-mono tracking-widest text-[#6B6B6B]">TOPIC</span>
+          <span class="text-xs uppercase font-mono tracking-widest text-[#6B6B6B]">TOPIK</span>
           <h2 id="speaking-topic-display" class="font-display text-3xl md:text-4xl font-extrabold text-[#7A1E2C] uppercase">
             TOPIK BICARA
           </h2>
@@ -465,22 +463,22 @@
         <!-- Live Metrics -->
         <div class="grid grid-cols-2 gap-4 bg-[#F7F5F2] p-4 rounded-2xl border border-[#1C1C1C]/5 text-left">
           <div>
-            <span class="text-[10px] font-mono uppercase text-[#6B6B6B] block">FILLER WORDS</span>
+            <span class="text-[10px] font-mono uppercase text-[#6B6B6B] block">KATA PENGISI</span>
             <span id="live-filler-count" class="font-mono font-bold text-lg text-[#7A1E2C]">0</span>
           </div>
           <div>
-            <span class="text-[10px] font-mono uppercase text-[#6B6B6B] block">THINKING MOMENTS</span>
+            <span class="text-[10px] font-mono uppercase text-[#6B6B6B] block">MOMEN BERPIKIR</span>
             <span id="live-thinking-moments" class="font-mono font-bold text-lg text-[#1C1C1C]">0</span>
           </div>
         </div>
 
         <div class="flex justify-center items-center gap-4 pt-2">
           <button onclick="togglePauseSpeaking()" id="pause-speaking-btn" class="flex-1 bg-[#1C1C1C]/5 border border-[#1C1C1C]/10 text-[#1C1C1C] text-sm font-semibold py-3.5 rounded-full transition flex items-center justify-center gap-2">
-            <span>PAUSE</span>
+            <span>JEDA</span>
           </button>
 
           <button onclick="confirmFinishSpeaking()" class="flex-1 bg-[#7A1E2C] text-white text-sm font-semibold py-3.5 rounded-full hover:bg-[#5E1621] transition shadow-md shadow-[#7A1E2C]/20">
-            FINISH
+            SELESAIKAN
           </button>
         </div>
       </div>
@@ -488,26 +486,26 @@
       <!-- STEP 6: EVALUATION & RESULTS -->
       <div id="practice-step-results" class="practice-step hidden w-full max-w-2xl bg-white border border-[#1C1C1C]/10 rounded-3xl p-8 md:p-12 space-y-8 shadow-xl">
         <div class="text-center space-y-2 border-b border-[#1C1C1C]/10 pb-6">
-          <span class="text-xs uppercase font-mono tracking-widest text-emerald-600 font-bold">GOOD WORK</span>
+          <span class="text-xs uppercase font-mono tracking-widest text-emerald-600 font-bold">BAGUS</span>
           <h2 class="font-display text-3xl font-extrabold">Evaluasi Latihan Selesai</h2>
           <p class="text-xs text-[#6B6B6B]">Topik: <span id="res-topic-title" class="font-bold text-[#1C1C1C]">...</span></p>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div class="bg-[#F7F5F2] p-4 rounded-2xl border border-[#1C1C1C]/5">
-            <span class="text-[10px] font-mono uppercase text-[#6B6B6B] block mb-1">SPEAKING TIME</span>
+            <span class="text-[10px] font-mono uppercase text-[#6B6B6B] block mb-1">WAKTU BERBICARA</span>
             <span id="res-speaking-time" class="font-mono text-xl font-bold">00:00</span>
           </div>
           <div class="bg-[#F7F5F2] p-4 rounded-2xl border border-[#1C1C1C]/5">
-            <span class="text-[10px] font-mono uppercase text-[#6B6B6B] block mb-1">FLUENCY</span>
+            <span class="text-[10px] font-mono uppercase text-[#6B6B6B] block mb-1">KELANCARAN</span>
             <span id="res-fluency-score" class="font-mono text-xl font-bold text-[#7A1E2C]">0%</span>
           </div>
           <div class="bg-[#F7F5F2] p-4 rounded-2xl border border-[#1C1C1C]/5">
-            <span class="text-[10px] font-mono uppercase text-[#6B6B6B] block mb-1">FILLER WORDS</span>
+            <span class="text-[10px] font-mono uppercase text-[#6B6B6B] block mb-1">KATA PENGISI</span>
             <span id="res-filler-count" class="font-mono text-xl font-bold">0</span>
           </div>
           <div class="bg-[#F7F5F2] p-4 rounded-2xl border border-[#1C1C1C]/5">
-            <span class="text-[10px] font-mono uppercase text-[#6B6B6B] block mb-1">THINKING MOMENTS</span>
+            <span class="text-[10px] font-mono uppercase text-[#6B6B6B] block mb-1">MOMEN BERPIKIR</span>
             <span id="res-thinking-moments" class="font-mono text-xl font-bold">0</span>
           </div>
         </div>
@@ -541,7 +539,7 @@
     <section id="view-progress" class="view-section hidden px-6 py-10 max-w-5xl mx-auto space-y-10">
       <div class="space-y-2">
         <span class="text-xs uppercase font-mono tracking-widest text-[#7A1E2C] font-semibold">PERKEMBANGAN KAMU</span>
-        <h1 class="font-display text-3xl font-extrabold">YOUR PROGRESS</h1>
+        <h1 class="font-display text-3xl font-extrabold">PERKEMBANGANMU</h1>
         <p class="text-sm text-[#6B6B6B]">Pantau bagaimana kemampuan bicaramu berkembang dari waktu ke waktu.</p>
       </div>
 
@@ -554,7 +552,7 @@
     <section id="view-history" class="view-section hidden px-6 py-10 max-w-5xl mx-auto space-y-8">
       <div class="space-y-2">
         <span class="text-xs uppercase font-mono tracking-widest text-[#7A1E2C] font-semibold">RIWAYAT LATIHAN</span>
-        <h1 class="font-display text-3xl font-extrabold">PRACTICE HISTORY</h1>
+        <h1 class="font-display text-3xl font-extrabold">RIWAYAT LATIHAN</h1>
       </div>
 
       <div id="history-container" class="bg-white border border-[#1C1C1C]/10 rounded-3xl p-6 shadow-sm">
@@ -566,7 +564,7 @@
     <section id="view-profile" class="view-section hidden px-6 py-10 max-w-4xl mx-auto space-y-10">
       <div class="space-y-2">
         <span class="text-xs uppercase font-mono tracking-widest text-[#7A1E2C] font-semibold">PROFIL PEMBICARA</span>
-        <h1 class="font-display text-3xl font-extrabold">YOUR PROFILE</h1>
+        <h1 class="font-display text-3xl font-extrabold">PROFIL SAYA</h1>
       </div>
 
       <div class="bg-white border border-[#1C1C1C]/10 rounded-3xl p-8 space-y-8 shadow-sm">
@@ -578,13 +576,13 @@
             <h2 id="prof-name" class="font-display text-xl font-bold">Pembicara VOKARA</h2>
             <p id="prof-email" class="text-xs text-[#6B6B6B] font-mono">user@vokara.com</p>
             <span id="prof-level-badge" class="inline-block mt-2 bg-[#7A1E2C]/10 text-[#7A1E2C] text-[10px] font-mono font-bold px-3 py-1 rounded-full">
-              Beginner Speaker
+              Pembicara Pemula
             </span>
           </div>
         </div>
 
         <div class="space-y-4">
-          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-[#6B6B6B]">CONFIDENCE JOURNEY</h3>
+          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-[#6B6B6B]">PERJALANAN KEPERCAYAAN DIRI</h3>
           <div id="prof-journey-steps" class="grid grid-cols-2 md:grid-cols-5 gap-3 text-center">
             <!-- Rendered via JS -->
           </div>
@@ -592,27 +590,27 @@
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t border-[#1C1C1C]/10">
           <div>
-            <span class="text-[10px] uppercase font-mono text-[#6B6B6B]">CONFIDENCE SCORE</span>
+            <span class="text-[10px] uppercase font-mono text-[#6B6B6B]">SKOR KEPERCAYAAN DIRI</span>
             <div id="prof-conf-score" class="font-mono text-xl font-bold text-[#7A1E2C]">0%</div>
           </div>
           <div>
-            <span class="text-[10px] uppercase font-mono text-[#6B6B6B]">TOTAL PRACTICES</span>
+            <span class="text-[10px] uppercase font-mono text-[#6B6B6B]">TOTAL LATIHAN</span>
             <div id="prof-total-practices" class="font-mono text-xl font-bold">0</div>
           </div>
           <div>
-            <span class="text-[10px] uppercase font-mono text-[#6B6B6B]">SPEAKING TIME</span>
+            <span class="text-[10px] uppercase font-mono text-[#6B6B6B]">WAKTU BERBICARA</span>
             <div id="prof-total-time" class="font-mono text-xl font-bold">0 min</div>
           </div>
           <div>
             <span class="text-[10px] uppercase font-mono text-[#6B6B6B]">LEVEL</span>
-            <div id="prof-level-title" class="font-mono text-xs font-bold text-[#1C1C1C] truncate">Beginner Speaker</div>
+            <div id="prof-level-title" class="font-mono text-xs font-bold text-[#1C1C1C] truncate">Pembicara Pemula</div>
           </div>
         </div>
 
         <div class="pt-6 border-t border-[#1C1C1C]/10">
           <button onclick="handleLogout()" class="bg-red-50 text-red-700 hover:bg-red-100 text-xs font-semibold px-6 py-3 rounded-full transition flex items-center gap-2">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
-            <span>LOGOUT ACCOUNT</span>
+            <span>KELUAR</span>
           </button>
         </div>
       </div>
@@ -632,11 +630,11 @@
 
       <div class="grid grid-cols-2 gap-4 text-center">
         <div class="bg-[#F7F5F2] p-3 rounded-xl">
-          <span class="text-[10px] font-mono text-[#6B6B6B] block">FLUENCY</span>
+          <span class="text-[10px] font-mono text-[#6B6B6B] block">KELANCARAN</span>
           <span id="modal-fluency" class="font-mono text-lg font-bold text-[#7A1E2C]">0%</span>
         </div>
         <div class="bg-[#F7F5F2] p-3 rounded-xl">
-          <span class="text-[10px] font-mono text-[#6B6B6B] block">SPEAKING TIME</span>
+          <span class="text-[10px] font-mono text-[#6B6B6B] block">WAKTU BERBICARA</span>
           <span id="modal-duration" class="font-mono text-lg font-bold">00:00</span>
         </div>
       </div>
@@ -657,13 +655,37 @@
   <!-- FOOTER -->
   <footer class="border-t border-[#1C1C1C]/10 py-8 px-6 text-center text-xs text-[#6B6B6B] space-y-2 bg-[#F7F5F2]">
     <div class="font-display font-bold text-[#7A1E2C]">VOKARA</div>
-    <p>Think Fast. Speak Clearly. Become More Confident.</p>
-    <p class="text-[10px] font-mono opacity-60">© 2026 VOKARA Platform Public Speaking. All rights reserved.</p>
+    <p>Think Fast. Berbicara Lebih Jelas. Menjadi Lebih Percaya Diri.</p>
+    <p class="text-[10px] font-mono opacity-60">© 2026 VOKARA Platform Public Speaking. Seluruh hak dilindungi.</p>
   </footer>
 
+  <!-- Firebase: autentikasi + database cloud -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
   <script>
-    // --- 200+ TOPICS DATABASE ---
-    const TOPICS_DATABASE = [
+    // GANTI NILAI DI BAWAH DENGAN KONFIGURASI WEB APP FIREBASE MILIKMU.
+    // Jangan pernah memasukkan service-account/private key di frontend.
+    const firebaseConfig = {
+      apiKey: "GANTI_DENGAN_API_KEY",
+      authDomain: "GANTI_DENGAN_PROJECT_ID.firebaseapp.com",
+      projectId: "GANTI_DENGAN_PROJECT_ID",
+      storageBucket: "GANTI_DENGAN_PROJECT_ID.firebasestorage.app",
+      messagingSenderId: "GANTI_DENGAN_MESSAGING_SENDER_ID",
+      appId: "GANTI_DENGAN_APP_ID"
+    };
+    let firebaseReady = false;
+    try {
+      firebase.initializeApp(firebaseConfig);
+      firebaseReady = !firebaseConfig.apiKey.startsWith('GANTI_');
+    } catch (e) {
+      console.error('Firebase belum dikonfigurasi:', e);
+    }
+  </script>
+
+  <script>
+    // --- 200+ TOPIKS DATABASE ---
+    const TOPIKS_DATABASE = [
       "Kegagalan", "Kesuksesan", "Keberanian", "Kebahagiaan", "Kepercayaan Diri", "Masa Depan", "Waktu", "Pendidikan",
       "Sekolah", "Keluarga", "Persahabatan", "Teknologi", "Kecerdasan Buatan (AI)", "Media Sosial", "Internet", "Smartphone",
       "Lingkungan Hidup", "Bisnis & Kewirausahaan", "Kepemimpinan", "Kreativitas", "Keuangan & Uang", "Pekerjaan Impian", "Impian & Ambisi",
@@ -679,7 +701,7 @@
       "Mengatasi Imposter Syndrome", "Buku yang Mengubah Cara Pandang Saya", "Keindahan Kebudayaan Nusantara", "Dampak Positif dan Negatif AI"
     ];
 
-    // --- FILLER WORDS PATTERNS ---
+    // --- KATA PENGISI PATTERNS ---
     const FILLER_PATTERNS = [
       { pattern: /\b(e+|e+h+|e+m+|e+m+m+)\b/gi, label: 'Ee / Emm' },
       { pattern: /\b(h+m+m+|h+m+)\b/gi, label: 'Hmm' },
@@ -691,10 +713,12 @@
     ];
 
     // --- APPLICATION STATE ---
-    let currentUser = JSON.parse(localStorage.getItem('vokara_user')) || null;
-    let authMode = 'login'; // 'login' | 'register'
-    let practices = JSON.parse(localStorage.getItem('vokara_practices')) || [];
+    let currentUser = null;
+    let currentProfile = null;
+    let practices = [];
     let usedTopics = [];
+    let authMode = 'login';
+    let isDataLoading = false;
 
     // Active session state variables
     let currentTopic = '';
@@ -707,6 +731,7 @@
     let totalFillerCount = 0;
     let thinkingMoments = 0;
     let liveTranscript = '';
+    let practiceSaved = false;
 
     // Hardware Audio & Speech Recognition Refs
     let audioCtx = null;
@@ -715,17 +740,71 @@
     let animFrameId = null;
     let speechRecognition = null;
     let lastSpeechTimestamp = Date.now();
+    let speechRestarting = false;
 
     window.onload = function() {
       setupWaveformBars();
+      updateAuthUI();
       renderAuthNavControls();
 
-      if (currentUser) {
-        switchView('dashboard');
-      } else {
+      if (!firebaseReady) {
+        showAuthError('Sistem akun belum terhubung ke Firebase. Isi konfigurasi Firebase terlebih dahulu.');
         switchView('landing');
+        return;
       }
+
+      firebase.auth().onAuthStateChanged(async (user) => {
+        if (user) {
+          currentUser = { uid: user.uid, name: user.displayName || user.email.split('@')[0], email: user.email };
+          await loadUserData(user);
+          renderAuthNavControls();
+          switchView('dashboard');
+        } else {
+          currentUser = null;
+          currentProfile = null;
+          practices = [];
+          usedTopics = [];
+          renderAuthNavControls();
+          switchView('landing');
+        }
+      });
     };
+
+    async function loadUserData(user) {
+      isDataLoading = true;
+      try {
+        const db = firebase.firestore();
+        const profileRef = db.collection('users').doc(user.uid);
+        const profileSnap = await profileRef.get();
+
+        if (!profileSnap.exists) {
+          currentProfile = {
+            name: user.displayName || user.email.split('@')[0],
+            email: user.email,
+            created_at: new Date().toISOString(),
+            level: 'Pembicara Pemula',
+            confidence_score: 0,
+            total_practices: 0,
+            total_speaking_seconds: 0
+          };
+          await profileRef.set(currentProfile, { merge: true });
+        } else {
+          currentProfile = profileSnap.data();
+        }
+
+        const snapshot = await db.collection('users').doc(user.uid).collection('practices')
+          .orderBy('created_at', 'desc').get();
+        practices = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+        usedTopics = practices.map(p => p.topic).filter(Boolean);
+      } catch (err) {
+        console.error('Gagal memuat data VOKARA:', err);
+        showAuthError('Data akun belum dapat dimuat. Periksa koneksi internet dan aturan database Firebase.');
+        practices = [];
+        usedTopics = [];
+      } finally {
+        isDataLoading = false;
+      }
+    }
 
     function navigateToHome() {
       if (currentUser) {
@@ -826,14 +905,14 @@
       errAlert.classList.add('hidden');
 
       if (authMode === 'register') {
-        title.innerText = 'CREATE YOUR ACCOUNT';
+        title.innerText = 'BUAT AKUN';
         subtitle.innerText = 'Mulai perjalanan meningkatkan kepercayaan diri bicaramu.';
         nameContainer.classList.remove('hidden');
-        submitBtn.innerText = 'CREATE ACCOUNT';
+        submitBtn.innerText = 'DAFTAR';
         switchPrompt.innerText = 'Sudah punya akun?';
         switchBtn.innerText = 'Masuk di sini';
       } else {
-        title.innerText = 'WELCOME BACK';
+        title.innerText = 'SELAMAT DATANG KEMBALI';
         subtitle.innerText = 'Masuk untuk melanjutkan latihan spontanmu.';
         nameContainer.classList.add('hidden');
         submitBtn.innerText = 'MASUK';
@@ -842,43 +921,106 @@
       }
     }
 
-    function handleAuthSubmit(e) {
+    async function handleAuthSubmit(e) {
       e.preventDefault();
-      const email = document.getElementById('auth-email').value.trim();
+      if (!firebaseReady) return showAuthError('Firebase belum dikonfigurasi. Hubungkan project Firebase terlebih dahulu.');
+
+      const email = document.getElementById('auth-email').value.trim().toLowerCase();
       const password = document.getElementById('auth-password').value;
       const name = document.getElementById('auth-name').value.trim() || email.split('@')[0];
+      const submitBtn = document.getElementById('auth-submit-btn');
 
-      if (authMode === 'register' && !name) {
-        return showAuthError('Nama lengkap wajib diisi.');
+      if (authMode === 'register' && !name) return showAuthError('Nama lengkap wajib diisi.');
+      if (password.length < 6) return showAuthError('Kata sandi minimal 6 karakter.');
+
+      submitBtn.disabled = true;
+      submitBtn.innerText = authMode === 'register' ? 'MENDAFTARKAN...' : 'MEMERIKSA...';
+      try {
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        let credential;
+
+        if (authMode === 'register') {
+          credential = await auth.createUserWithEmailAndPassword(email, password);
+          await credential.user.updateProfile({ displayName: name });
+          await db.collection('users').doc(credential.user.uid).set({
+            name, email, created_at: new Date().toISOString(),
+            level: 'Pembicara Pemula', confidence_score: 0,
+            total_practices: 0, total_speaking_seconds: 0
+          }, { merge: true });
+        } else {
+          credential = await auth.signInWithEmailAndPassword(email, password);
+        }
+
+        document.getElementById('auth-form').reset();
+        document.getElementById('auth-error-alert').classList.add('hidden');
+      } catch (err) {
+        console.error(err);
+        const messages = {
+          'auth/email-already-in-use': 'Email tersebut sudah terdaftar. Silakan masuk menggunakan akun tersebut.',
+          'auth/invalid-email': 'Format email tidak valid.',
+          'auth/invalid-credential': 'Email atau kata sandi tidak sesuai.',
+          'auth/user-not-found': 'Akun dengan email tersebut belum terdaftar.',
+          'auth/wrong-password': 'Email atau kata sandi tidak sesuai.',
+          'auth/weak-password': 'Kata sandi terlalu lemah. Gunakan minimal 6 karakter.',
+          'auth/too-many-requests': 'Terlalu banyak percobaan. Coba lagi beberapa saat.'
+        };
+        showAuthError(messages[err.code] || 'Tidak dapat masuk. Silakan coba lagi.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerText = authMode === 'register' ? 'DAFTAR' : 'MASUK';
       }
-
-      currentUser = {
-        name: name,
-        email: email,
-        created_at: new Date().toISOString()
-      };
-
-      localStorage.setItem('vokara_user', JSON.stringify(currentUser));
-      renderAuthNavControls();
-      switchView('dashboard');
     }
 
-    function handleGuestLogin() {
-      currentUser = {
-        name: 'Tamu VOKARA',
-        email: 'guest@vokara.com',
-        created_at: new Date().toISOString()
-      };
-      localStorage.setItem('vokara_user', JSON.stringify(currentUser));
-      renderAuthNavControls();
-      switchView('dashboard');
+    async function handleLogout() {
+      try {
+        cleanupAudioHardware();
+        if (firebaseReady) await firebase.auth().signOut();
+      } catch (err) {
+        console.error(err);
+        showAuthError('Tidak dapat keluar. Silakan coba lagi.');
+      }
     }
 
-    function handleLogout() {
-      currentUser = null;
-      localStorage.removeItem('vokara_user');
-      renderAuthNavControls();
-      switchView('landing');
+    async function savePracticeToCloud(newSession) {
+      if (!currentUser || !firebaseReady) throw new Error('Pengguna belum login atau Firebase belum siap.');
+      const db = firebase.firestore();
+      const userRef = db.collection('users').doc(currentUser.uid);
+      const practiceRef = await userRef.collection('practices').add(newSession);
+
+      const nextPractices = [newSession, ...practices];
+      const totalSec = nextPractices.reduce((sum, p) => sum + Number(p.actual_duration || 0), 0);
+      const avgKelancaran = nextPractices.reduce((sum, p) => sum + Number(p.fluency_score || 0), 0) / nextPractices.length;
+      const confidence = calculateConfidenceScore(nextPractices);
+      const level = calculateLevel(nextPractices.length);
+
+      await userRef.set({
+        name: currentProfile?.name || currentUser.name,
+        email: currentUser.email,
+        total_practices: nextPractices.length,
+        total_speaking_seconds: totalSec,
+        average_fluency: Math.round(avgKelancaran),
+        confidence_score: confidence,
+        level,
+        updated_at: new Date().toISOString()
+      }, { merge: true });
+
+      practices = [{ id: practiceRef.id, ...newSession }, ...practices];
+      usedTopics.push(currentTopic);
+      currentProfile = { ...(currentProfile || {}), total_practices: nextPractices.length, total_speaking_seconds: totalSec, confidence_score: confidence, level };
+    }
+
+    async function resetPassword() {
+      if (!firebaseReady) return showAuthError('Firebase belum dikonfigurasi.');
+      const email = document.getElementById('auth-email').value.trim().toLowerCase();
+      if (!email) return showAuthError('Masukkan email terlebih dahulu.');
+      try {
+        await firebase.auth().sendPasswordResetEmail(email);
+        showAuthError('Link untuk mengatur ulang kata sandi sudah dikirim ke emailmu.');
+      } catch (err) {
+        console.error(err);
+        showAuthError('Email tidak ditemukan atau link reset tidak dapat dikirim.');
+      }
     }
 
     function showAuthError(msg) {
@@ -896,7 +1038,7 @@
       document.getElementById('dash-conf-score').innerText = `${confScore}%`;
 
       const totalSec = practices.reduce((acc, p) => acc + (p.actual_duration || 0), 0);
-      document.getElementById('dash-[#dash-growth-time]' || 'dash-growth-time').innerText = formatTotalTime(totalSec);
+      document.getElementById('dash-growth-time').innerText = formatTotalTime(totalSec);
       document.getElementById('dash-growth-sessions').innerText = `${practices.length} Sesi`;
 
       const level = calculateLevel(practices.length);
@@ -923,7 +1065,7 @@
               </div>
             </div>
             <div class="flex items-center gap-4">
-              <span class="text-sm font-bold font-mono text-[#7A1E2C]">${p.fluency_score}% Fluency</span>
+              <span class="text-sm font-bold font-mono text-[#7A1E2C]">${p.fluency_score}% Kelancaran</span>
               <svg class="w-4 h-4 text-[#6B6B6B]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </div>
           </div>
@@ -931,22 +1073,23 @@
       }
     }
 
-    function calculateConfidenceScore() {
-      if (practices.length === 0) return 0;
-      const avgFluency = practices.reduce((a, b) => a + (b.fluency_score || 0), 0) / practices.length;
-      const consistency = Math.min(100, (practices.length / 20) * 100);
-      const totalSec = practices.reduce((a, b) => a + (b.actual_duration || 0), 0);
+    function calculateConfidenceScore(data = practices) {
+      if (!data.length) return 0;
+      const avgKelancaran = data.reduce((a, b) => a + Number(b.fluency_score || 0), 0) / data.length;
+      const consistency = Math.min(100, (data.length / 20) * 100);
+      const totalSec = data.reduce((a, b) => a + Number(b.actual_duration || 0), 0);
       const durationScore = Math.min(100, (totalSec / 1800) * 100);
-
-      const score = Math.round((avgFluency * 0.5) + (consistency * 0.3) + (durationScore * 0.2));
-      return Math.min(99, Math.max(10, score));
+      const fillerAvg = data.reduce((a, b) => a + Number(b.filler_words || 0), 0) / data.length;
+      const fillerScore = Math.max(0, 100 - Math.min(100, fillerAvg * 5));
+      return Math.min(99, Math.max(0, Math.round((avgKelancaran * 0.45) + (consistency * 0.25) + (durationScore * 0.15) + (fillerScore * 0.15))));
     }
 
     function calculateLevel(count) {
-      if (count < 5) return 'Beginner Speaker';
-      if (count < 15) return 'Growing Speaker';
-      if (count < 30) return 'Confident Speaker';
-      return 'Master Speaker';
+      if (count < 5) return 'Pembicara Pemula';
+      if (count < 15) return 'Pembicara Berkembang';
+      if (count < 30) return 'Pembicara Percaya Diri';
+      if (count < 50) return 'Pembicara Mahir';
+      return 'Master Berbicara';
     }
 
     function startPracticeFlow() {
@@ -968,13 +1111,13 @@
       const totalTicks = 25;
       const shuffleDisplay = document.getElementById('shuffle-text-display');
 
-      const unused = TOPICS_DATABASE.filter(t => !usedTopics.includes(t));
-      const pool = unused.length > 0 ? unused : TOPICS_DATABASE;
+      const unused = TOPIKS_DATABASE.filter(t => !usedTopics.includes(t));
+      const pool = unused.length > 0 ? unused : TOPIKS_DATABASE;
       const selected = pool[Math.floor(Math.random() * pool.length)];
 
       const interval = setInterval(() => {
         counter++;
-        const randItem = TOPICS_DATABASE[Math.floor(Math.random() * TOPICS_DATABASE.length)];
+        const randItem = TOPIKS_DATABASE[Math.floor(Math.random() * TOPIKS_DATABASE.length)];
         shuffleDisplay.innerText = randItem.toUpperCase();
 
         if (counter >= totalTicks) {
@@ -1141,7 +1284,7 @@
     function togglePauseSpeaking() {
       isSpeakingPaused = !isSpeakingPaused;
       const btn = document.getElementById('pause-speaking-btn');
-      btn.innerHTML = isSpeakingPaused ? '<span>CONTINUE</span>' : '<span>PAUSE</span>';
+      btn.innerHTML = isSpeakingPaused ? '<span>CONTINUE</span>' : '<span>JEDA</span>';
     }
 
     function confirmFinishSpeaking() {
@@ -1164,7 +1307,7 @@
       }
     }
 
-    function finishSpeakingSession() {
+    async function finishSpeakingSession() {
       cleanupAudioHardware();
 
       const actualDuration = targetSpeakingSec - speakingTimeLeft;
@@ -1172,8 +1315,8 @@
       
       const fillerPenalty = Math.min(40, totalFillerCount * 3);
       const thinkingPenalty = Math.min(20, thinkingMoments * 4);
-      const baseFluency = Math.max(30, Math.round(100 - fillerPenalty - thinkingPenalty));
-      const fluencyScore = Math.round((baseFluency * 0.7) + (durationPct * 0.3));
+      const baseKelancaran = Math.max(30, Math.round(100 - fillerPenalty - thinkingPenalty));
+      const fluencyScore = Math.round((baseKelancaran * 0.7) + (durationPct * 0.3));
 
       const newSession = {
         topic: currentTopic,
@@ -1186,9 +1329,12 @@
         created_at: new Date().toISOString()
       };
 
-      practices.unshift(newSession);
-      usedTopics.push(currentTopic);
-      localStorage.setItem('vokara_practices', JSON.stringify(practices));
+      try {
+        await savePracticeToCloud(newSession);
+      } catch (err) {
+        console.error(err);
+        document.getElementById('res-feedback-text').innerText = 'Hasil latihan belum berhasil disimpan ke akunmu. Periksa koneksi internet, tetapi latihanmu tetap dapat dilihat sementara di halaman ini.';
+      }
 
       // Display Results
       document.getElementById('res-topic-title').innerText = currentTopic;
@@ -1223,7 +1369,7 @@
 
       container.innerHTML = `
         <div class="bg-white border border-[#1C1C1C]/10 rounded-3xl p-8 space-y-6 shadow-sm">
-          <h3 class="font-display text-base font-bold">TREN KELANCARAN (FLUENCY SCORE %)</h3>
+          <h3 class="font-display text-base font-bold">TREN KELANCARAN (KELANCARAN SCORE %)</h3>
           <div class="h-44 flex items-end gap-3 pt-6 border-b border-[#1C1C1C]/10 px-2 overflow-x-auto">
             ${practices.slice(0, 10).reverse().map(p => `
               <div class="flex-1 min-w-[32px] flex flex-col items-center gap-2 group">
@@ -1260,8 +1406,8 @@
               </div>
               <div class="flex items-center gap-6">
                 <div class="text-right">
-                  <span class="text-xs font-mono font-bold text-[#7A1E2C]">${p.fluency_score}% Fluency</span>
-                  <span class="text-xs text-[#6B6B6B] block font-mono">${p.filler_words} Filler Words</span>
+                  <span class="text-xs font-mono font-bold text-[#7A1E2C]">${p.fluency_score}% Kelancaran</span>
+                  <span class="text-xs text-[#6B6B6B] block font-mono">${p.filler_words} Kata Pengisi</span>
                 </div>
                 <svg class="w-5 h-5 text-[#6B6B6B]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </div>
@@ -1291,7 +1437,7 @@
       const steps = [
         { label: "START", active: true },
         { label: "SPEAK MORE", active: practices.length >= 5 },
-        { label: "THINK FASTER", active: practices.length >= 15 },
+        { label: "BERPIKIR LEBIH CEPAT", active: practices.length >= 15 },
         { label: "SPEAK CLEARLY", active: practices.length >= 30 },
         { label: "CONFIDENT", active: practices.length >= 50 }
       ];
